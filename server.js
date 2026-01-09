@@ -17,7 +17,7 @@ const users = [
 app.post("/api/login", (req, res) => {
   const { username, password } = req.body;
 
-  console.log('request received for ' + username + ' ' + password)
+  //console.log('request received for ' + username + ' ' + password)
 
   const user = users.find(
     (u) => u.username === username && u.password === password
